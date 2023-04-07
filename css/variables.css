@@ -9,6 +9,9 @@
    --main-color-purple: #a231ca;
    --cta-hover-purple: #cf4bfe;
 
+   /* box shadow */
+   --container-shadow: 1px -1px 29px 2px rgba(0,0,0,0.4);
+
    /* spacing */
    --spacing-unit: 10px;
 

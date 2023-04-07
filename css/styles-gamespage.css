@@ -58,6 +58,7 @@ select {
    border-radius: 2em;
    transition: linear .3s;
    background-image: var(--gamespage-bg-item);
+   box-shadow: var(--container-shadow);
 }
 
 .games-item a {
