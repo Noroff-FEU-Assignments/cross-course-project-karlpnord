@@ -10,6 +10,10 @@
    src: url("/fonts/Teko-Regular.ttf") format("truetype");
 }
 
+/* Import variables */
+
+@import url(/css/variables.css);
+
 * {
    margin: 0;
    padding: 0;
@@ -18,7 +22,7 @@
 
 :root {
    touch-action: pan-x pan-y;
-   height: 100% 
+   height: 100%; 
  }
 
 body {
@@ -46,7 +50,7 @@ h2 {
 /* Navigation and header*/
 
 header {
-   background-image: linear-gradient(to right, #a231ca, #4a00e0);
+   background-image: var(--bg-bannercolor);
    display: flex;
    align-items: center;
    width: 100%;
@@ -62,8 +66,8 @@ header {
 header img {
    width: 111px;
    height: 70px;
-   margin: 10px 0;
-   margin-left: 40px;
+   margin: var(--margin-small) 0;
+   margin-left: var(--margin-xlarge);
 }
 
 header label {
@@ -89,14 +93,14 @@ nav {
 }
 
 nav ul {
-   background-image: linear-gradient(to right, #a231ca, #4a00e0);
+   background-image: var(--bg-bannercolor);
    border-top: 1px solid #fff;
    border-bottom: 1px solid #fff;
 }
 
 nav li {
    list-style-type: none;
-   padding: 10px 20px;
+   padding: var(--padding-small) var(--padding-medium);
 }
 
 nav li a {
@@ -114,11 +118,11 @@ nav li a:hover {
 /* CTA's and etc */
 
 .cta-purple {
-   background-color: #a231ca;
+   background-color: var(--main-color-purple);
    color: #fff;
    text-decoration: none;
    font-size: 1.5rem;
-   padding: 10px 40px;
+   padding: var(--padding-small) var(--padding-xlarge);
    border-radius: 8px;
    border: 0px;
    display: block;
@@ -128,7 +132,7 @@ nav li a:hover {
 }
 
 .cta-purple:hover {
-   background-color: #cf4bfe;
+   background-color: var(--cta-hover-purple);
    transition: linear .3s;
 }
 
@@ -142,7 +146,7 @@ nav li a:hover {
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: #a231ca;
+   background-color: var(--main-color-purple);
    border-radius: 2rem;
    box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.4);
 }
@@ -177,7 +181,7 @@ nav li a:hover {
    color: #fff;
    background-color: #000;
    max-width: 200px;
-   padding: 12.5px 30px;
+   padding: 12.5px var(--padding-large);
    border-radius: 6px;
    text-align: center;
    display: block;
@@ -215,10 +219,10 @@ textarea {
 footer {
    width: 100%;
    text-align: center;
-   padding: 30px 0;
+   padding: var(--padding-large) 0;
    font-weight: 600;
-   background-image: linear-gradient(to right, #a231ca, #4a00e0);
-   color: white;
+   background-image: var(--bg-bannercolor);
+   color: #fff;
 }
 
 /* Responsive */
@@ -250,6 +254,6 @@ footer {
    }
 
    .shopping-cart{
-      margin: 0 40px;
+      margin: 0 var(--margin-xlarge);
    }
 }

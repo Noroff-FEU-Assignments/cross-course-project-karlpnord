@@ -1,3 +1,5 @@
+@import url(/css/variables.css);
+
 main {
    text-align: center;
    display: flex;
@@ -11,15 +13,15 @@ main {
 }
 
 .article-item {
-   padding: 20px;
+   padding: var(--padding-medium);
    font-size: 1.2em;
    display: flex;
    flex-direction: column; 
-   margin: 0 30px;
+   margin: 0 var(--margin-large);
 }
 
 .article-item > * {
-   margin: 20px 0;
+   margin: var(--margin-medium) 0;
 }
 
 .article-item h2 {
@@ -34,7 +36,7 @@ main {
 }
 
 .cta {
-   padding: 10px 50px;
+   padding: var(--padding-small) var(--padding-xxlarge);
    margin: auto 0;
    font-size: 1.2em;
    font-weight: 600;
@@ -43,7 +45,7 @@ main {
 }
 
 .cta-purple2 {
-   background-color: #a231ca;
+   background-color: var(--main-color-purple);
    color: #fff;
    border-radius: 8px;
    transition: all .3s;
@@ -56,12 +58,12 @@ main {
 }
 
 .cta-purple2:hover {
-   background-color: #cf4bfe;
+   background-color: var(--cta-hover-purple);
    transition: all .3s;
 }
 
 .cta-white:hover {
-   background-color: #c4c4c4;
+   background-color: var(--lg-bgcolor);
    transition: all .3s;
 }
 

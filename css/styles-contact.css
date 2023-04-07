@@ -1,3 +1,5 @@
+@import url(/css/variables.css);
+
 input {
    height: 40px;
    border-radius: 8px;
@@ -22,8 +24,8 @@ input[type="email"],
 textarea[type="text"] {
    font-size: 1.2rem;
    font-family: "Montserrat", Verdana, sans-serif;
-   padding: 5px;
-   padding-left: 10px;
+   padding: var(--padding-xsmall);
+   padding-left: var(--padding-small);
 }
 
 main {
@@ -36,7 +38,7 @@ main {
 
 .grid-container {
    max-width: 46rem;
-   margin: 0 20px;
+   margin: 0 var(--margin-medium);
    display: grid;
    grid-template-rows: 1fr 1fr;
    border-radius: 2rem;
@@ -46,7 +48,7 @@ main {
 
 .personal-details {
    font-size: 1.5rem;
-   background-color: #a231ca;
+   background-color: var(--main-color-purple);
    color: #fff;
    padding: 2.5rem;
    display: grid;
@@ -56,13 +58,13 @@ main {
 
 .personal-details img {
    max-width: 200px;
-   margin-top: 30px;
+   margin-top: var(--margin-large);
 }
 
 .image-item {
    display: flex;
    justify-content: center;
-   margin-top: 30px;
+   margin-top: var(--margin-large);
 }
 
 .message-details {
@@ -86,5 +88,9 @@ main {
    .personal-details {
       text-align: left;
       align-content: flex-start;
+   }
+
+   .message-details p {
+      font-size: 1.5em;
    }
 }

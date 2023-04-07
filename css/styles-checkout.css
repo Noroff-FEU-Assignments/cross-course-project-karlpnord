@@ -1,3 +1,5 @@
+@import url(/css/variables.css);
+
 input {
    height: 40px;
    border-radius: 8px;
@@ -17,13 +19,13 @@ input[type="email"],
 input[type="tel"] {
    font-size: 1.2rem;
    font-family: "Montserrat", Verdana, sans-serif;
-   padding: 5px;
+   padding: var(--padding-xsmall);
    padding-left: 10px;
 }
 
 select {
    height: 40px;
-   border-radius: 4px;
+   border-radius: var(--padding-small);
    border: 1px solid #000;
    font-size: 1.2rem;
    font-family: "Montserrat", Verdana, sans-serif;
@@ -49,7 +51,7 @@ main {
 
 .personal-details {
    font-size: 1.5rem;
-   background-color: #a231ca;
+   background-color: var(--main-color-purple);
    color: #fff;
    padding: 2.5rem;
    display: grid;
@@ -59,7 +61,7 @@ main {
 
 .personal-details img {
    max-width: 200px;
-   margin-top: 30px;
+   margin-top: var(--margin-large);
 }
 
 .image-item {

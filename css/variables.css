@@ -1,0 +1,31 @@
+:root {
+   /* background */
+   --bg-gradient-darken: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
+   --bg-bannercolor: linear-gradient(to right, #a231ca, #4a00e0);
+   --lg-bgcolor: #c4c4c4;
+   --gamespage-bg-item: linear-gradient(120deg, #a231ca, #4a00e0);
+   
+   /* colors */
+   --main-color-purple: #a231ca;
+   --cta-hover-purple: #cf4bfe;
+
+   /* spacing */
+   --spacing-unit: 10px;
+
+   --margin: calc(0.5 * var(--spacing-unit));
+   --padding: calc(0.5 * var(--spacing-unit));
+
+   --margin-xsmall: var(--margin); /* 5px */
+   --margin-small: calc(2 * var(--margin)); /* 10px */
+   --margin-medium: calc(4 * var(--margin)); /* 20px */
+   --margin-large: calc(6 * var(--margin)); /* 30px */
+   --margin-xlarge: calc(8 * var(--margin)); /* 40px */
+   --margin-xxlarge: calc(10 * var(--margin)); /* 50px */
+
+   --padding-xsmall: var(--padding); /* 5px */
+   --padding-small: calc(2 * var(--padding)); /* 10px */
+   --padding-medium: calc(4 * var(--padding)); /* 20px */
+   --padding-large: calc(6 * var(--padding)); /* 30px */
+   --padding-xlarge: calc(8 * var(--padding)); /* 40px */
+   --padding-xxlarge: calc(10 * var(--padding)); /* 40px */
+}

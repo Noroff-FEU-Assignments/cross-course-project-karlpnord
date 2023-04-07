@@ -1,8 +1,10 @@
+@import url(/css/variables.css);
+
 main {
    display: grid;
    place-items: center;
    align-content: center;
-   background-color: #c4c4c4;
+   background-color: var(--lg-bgcolor);
 }
 
 .grid-container {
@@ -13,7 +15,7 @@ main {
    border-radius: 2rem;
    overflow: hidden;
    box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.5);
-   margin: 50px 20px;
+   margin: var(--margin-xxlarge) var(--margin-medium);
    position: relative;
    background-color: #fff;
 }
@@ -27,7 +29,7 @@ main {
 }
 
 .image-item img {
-   margin-top: 30px;
+   margin-top: var(--margin-large);
    margin-bottom: -50px;
    max-width: 300px;
    border-radius: 8px;
@@ -71,7 +73,7 @@ main {
 }
 
 .product-item a i:hover {
-   color: #a231ca;
+   color: var(--main-color-purple);
    transform: translateY(-0.075em);
    transition: linear .3s;
 }
