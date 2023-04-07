@@ -107,12 +107,11 @@ nav li a {
    color: #fff;
    text-decoration: none;
    font-size: 2rem;
-   transition: linear .3s;
+   transition: all ease-in-out 300ms;
 }
 
 nav li a:hover {
    color: #000;
-   transition: linear .3s;
 }
 
 /* CTA's and etc */
@@ -190,7 +189,16 @@ nav li a:hover {
 
 .cta-black:hover {
    background-color: #777777;
-   transition: linear .3s;
+   transition: all ease-in-out 300ms;
+}
+
+.active-page {
+   text-decoration: underline;
+   
+}
+
+.active-page:hover {
+   text-decoration: none;
 }
 
 /* Forms focus */
