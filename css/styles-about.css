@@ -53,11 +53,11 @@ main {
    display: grid;
    align-content: center;
    font-size: 1.125rem;
-   gap: 1rem;
+   gap: 2rem;
 }
 
 .grid-article h2 {
-   font-size: 1.5em;
+   font-size: 1.75em;
    margin-bottom: 10px;
 }
 
