@@ -24,7 +24,7 @@
 }
 
 .secondary-home img {
-   max-width: 250px;
+   max-width: 400px;
    margin-top: var(--margin-medium);
 }
 
@@ -114,11 +114,12 @@
 @media (min-width: 1200px) {
    .secondary-home {
       flex-direction: row;
-      max-width: 1200px;
+      max-width: 100%;
+      border: 1px solid red;
    }
 
    .secondary-home img {
-      max-width: 350px;
+      max-width: 500px;
    }
 
    .secondary-item {

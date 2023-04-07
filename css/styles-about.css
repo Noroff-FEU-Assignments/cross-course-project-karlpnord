@@ -37,6 +37,10 @@ main {
    margin: 0 var(--margin-xlarge);
 }
 
+.grid-vertical-line {
+   display: none;
+}
+
 .grid-images {
    text-align: center;
    background-color: #fff;
@@ -65,4 +69,22 @@ main {
 
 .cursive {
    font-style: italic;
+}
+
+@media (min-width: 900px) {
+   .grid-container {
+      max-width: 60rem;
+      max-height: 30vh;
+      display: flex;
+   }
+
+   .grid-horizontal-line {
+      display: none;
+   }
+
+   .grid-vertical-line {
+      display: flex;
+      border-left: 1px solid #000;
+      margin: var(--margin-xlarge) 0;
+   }
 }
