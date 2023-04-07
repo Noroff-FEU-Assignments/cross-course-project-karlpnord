@@ -1,0 +1,255 @@
+/* Font Face and typography */
+
+@font-face {
+   font-family: "Montserrat";
+   src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Toko";
+   src: url("/fonts/Teko-Regular.ttf") format("truetype");
+}
+
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+:root {
+   touch-action: pan-x pan-y;
+   height: 100% 
+ }
+
+body {
+   font-family: "Montserrat", Verdana, sans-serif;
+   font-size: 16px;
+   min-height: 100vh;
+   min-height: 100dvh;
+   display: grid;
+   grid-template-rows: auto 1fr auto;
+}
+
+h1 {
+   font-size: 2.5rem;
+}
+
+h2 {
+   font-size: 2rem;
+}
+
+.line-break::before {
+   content: "\a";
+   white-space: pre;
+}
+
+/* Navigation and header*/
+
+header {
+   background-image: linear-gradient(to right, #a231ca, #4a00e0);
+   display: flex;
+   align-items: center;
+   width: 100%;
+   min-height: 70px;
+   justify-content: space-evenly;
+   box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.61);
+   position: relative;
+   color: #fff;
+   font-family: "Toko", Verdana, sans-serif;
+   letter-spacing: 1.25;
+}
+
+header img {
+   width: 111px;
+   height: 70px;
+   margin: 10px 0;
+   margin-left: 40px;
+}
+
+header label {
+   font-size: 1.5rem;
+}
+
+nav, 
+#menu-checkbox,
+header img {
+   display: none;
+}
+
+#menu-checkbox:checked ~ nav {
+   display: block;
+}
+
+nav {
+   position: absolute;
+   z-index: 2;
+   top: 70px;
+   width: 100%;
+   text-align: center;
+}
+
+nav ul {
+   background-image: linear-gradient(to right, #a231ca, #4a00e0);
+   border-top: 1px solid #fff;
+   border-bottom: 1px solid #fff;
+}
+
+nav li {
+   list-style-type: none;
+   padding: 10px 20px;
+}
+
+nav li a {
+   color: #fff;
+   text-decoration: none;
+   font-size: 2rem;
+   transition: linear .3s;
+}
+
+nav li a:hover {
+   color: #000;
+   transition: linear .3s;
+}
+
+/* CTA's and etc */
+
+.cta-purple {
+   background-color: #a231ca;
+   color: #fff;
+   text-decoration: none;
+   font-size: 1.5rem;
+   padding: 10px 40px;
+   border-radius: 8px;
+   border: 0px;
+   display: block;
+   max-width: 250px;
+   text-align: center;
+   transition: linear .3s;
+}
+
+.cta-purple:hover {
+   background-color: #cf4bfe;
+   transition: linear .3s;
+}
+
+.secondary-nav {
+   border-radius: 2rem;
+   transition: .3s linear;
+}
+
+.secondary-nav a {
+   text-decoration: none;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+   background-color: #a231ca;
+   border-radius: 2rem;
+   box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.4);
+}
+
+.secondary-nav a,
+.secondary-nav i{
+   color: #fff;
+   padding: 2px 10px;
+   font-size: 1.5em;
+}
+
+.secondary-nav:hover {
+   box-shadow: 0 0.5em 0.5em -0.4em #000;
+   transform: translateY(-0.35em);
+   transition: linear .3s;
+   border-radius: 2rem;
+}
+
+.shopping-cart i{
+   font-size: 2.25em;
+   color: #fff;
+   transition: color .3s linear;
+}
+
+.shopping-cart i:hover {
+   color: #000;
+   transition: all .3s linear;
+}
+
+.cta-black {
+   text-decoration: none;
+   color: #fff;
+   background-color: #000;
+   max-width: 200px;
+   padding: 12.5px 30px;
+   border-radius: 6px;
+   text-align: center;
+   display: block;
+   transition: linear .3s;
+}
+
+.cta-black:hover {
+   background-color: #777777;
+   transition: linear .3s;
+}
+
+/* Forms focus */
+
+input:focus,
+textarea:focus {
+   outline: none !important;
+   border: 2px solid #a231ca;
+   transition: linear .25s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+   outline: none !important;
+   border: 2px solid #000;
+   transition: linear .25s;
+}
+
+input,
+textarea {
+   transition: linear .25s;
+}
+
+/* Footer */
+
+footer {
+   width: 100%;
+   text-align: center;
+   padding: 30px 0;
+   font-weight: 600;
+   background-image: linear-gradient(to right, #a231ca, #4a00e0);
+   color: white;
+}
+
+/* Responsive */
+
+@media (min-width: 730px) {
+   nav,
+   header img {
+      display: initial;
+   }
+
+   nav {
+      position: static;
+      background-image: none;
+   }
+
+   header label,
+   header h2 {
+      display: none;
+   }
+
+   nav ul {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 2em;
+      border-top: 0;
+      border-bottom: 0;
+      background-image: none;
+   }
+
+   .shopping-cart{
+      margin: 0 40px;
+   }
+}

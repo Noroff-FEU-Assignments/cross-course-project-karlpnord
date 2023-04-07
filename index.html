@@ -1,13 +1,81 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My first website</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="GameHub">
+    <title>GameHub | Home</title>
+    <link href="/css/styles.css" rel="stylesheet">
+    <link href="/css/styles-index.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
   </head>
   <body>
-    <h1>Hello world!</h1>
-    <p>Welcome to my first website.</p>
-    <h2>Web Security</h2>
-    <p id="web-security-question">How would you advise a potential client to secure his/her website from web security attacks? Note: the word count for your answer should not be greater than 250 words</p>
-    <p id="web-security-answer">When securing a website from web security attacks there are many different things you can do to ensure that your website will be protected against malicious attacks like cross-site scripting or SQL injections. Some of the things you can do to protect your website includes sanitization of your data. This will check if the data that has beeen accepted onto your website has the same format. Having secure authentication for when people log in etc. is also very useful. This way it's more difficult for malicious attacks to crack the authentication. It's also recommended that a website uses an open standard authorization protocol like OneLogin that we use for Noroff. Using a CI/CD tool to analyze changes in your code and flagging the changes that it rejects is also a good way to secure your website. And lastly, making sure the data on your website is protected when it's sent through networks is also crucial. There are also many other smaller ways to secure a website. Some examples are to implement an automatic user timeout, or to only store some parts of sensitive information (for example only the last 4 digits of a credit card if the customer can add his/her credit card information on the website. They would only need the last 4 digits to identify that it's their card)</p>
+    <header>
+      <img src="/images/gamehublogo.png" alt="image description"/>
+      <input type="checkbox" id="menu-checkbox" />
+      <label for="menu-checkbox"><i class="fas fa-bars"></i></label>
+      <h2>GameHub</h2>
+      <nav>
+         <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="games-page.html">Games</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="contact.html">Contact us</a></li>
+         </ul>
+      </nav>
+      <div class="shopping-cart">
+        <a href="checkout.html"><i class="fa-solid fa-bag-shopping"></i></a>
+      </div>
+    </header>
+    <main>
+      <section class="main-home">
+        <h1>Online marketplace with <br>highly competitive prices!</h1>
+        <span class="line-break"></span>
+        <a href="games-page.html" class="cta-purple">Our Games</a>
+      </section>
+      <section class="secondary-home">
+        <div class="secondary-item">
+          <img src="/images/gamehublogo.png" alt="image description"/>
+        </div>
+        <div class="secondary-item">
+          <h2>Want to sell a game?<span class="line-break"></span> Contact us and we will help you!</h2>
+          <span class="line-break"></span>
+          <a href="contact.html" class="cta-purple">Contact Us</a>
+        </div>
+      </section>
+      <div class="horizontal-line"></div>
+      <div class="review-background">
+        <section class="review-section">
+          <h2>Game Reviews</h2>
+          <div class="review-section-item">
+            <h3>Forge Legend</h3>
+            <img src="/images/GameHub_covers10.jpg" alt="image description"/>
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione autem minus aperiam dolore animi fuga amet blanditiis! Tenetur ipsa totam, qui aliquam odio explicabo.</p>
+          </div>
+          <div class="review-section-item">
+            <h3>Cyberpunk</h3>
+            <img src="/images/GameHub_covers9.jpg" alt="image description"/>
+            <div>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex ratione autem minus aperiam dolore animi fuga amet blanditiis! Tenetur ipsa totam, qui aliquam odio explicabo.</p>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer>
+      <p>&copy; 2023 GameHub</p>
+      <p>Online Game Provider</p>
+    </footer>
   </body>
 </html>
