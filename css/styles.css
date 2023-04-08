@@ -14,6 +14,8 @@
 
 @import url(/css/variables.css);
 
+/* general styling */
+
 * {
    margin: 0;
    padding: 0;
@@ -107,17 +109,17 @@ nav li a {
    color: #fff;
    text-decoration: none;
    font-size: 2rem;
-   transition: all ease-in-out 300ms;
+   transition: color ease-in-out 300ms;
 }
 
 nav li a:hover {
    color: #000;
 }
 
-/* CTA's and etc */
+/* CTA's, aref's and hover */
 
 .cta-purple {
-   background-color: var(--main-color-purple);
+   background: var(--main-color-purple);
    color: #fff;
    text-decoration: none;
    font-size: 1.5rem;
@@ -127,17 +129,16 @@ nav li a:hover {
    display: block;
    max-width: 250px;
    text-align: center;
-   transition: linear .3s;
+   transition: background ease 300ms;
 }
 
 .cta-purple:hover {
-   background-color: var(--cta-hover-purple);
-   transition: linear .3s;
+   background: var(--cta-hover-purple);
 }
 
 .secondary-nav {
    border-radius: 2rem;
-   transition: .3s linear;
+   transition: all ease 300ms;
 }
 
 .secondary-nav a {
@@ -159,37 +160,35 @@ nav li a:hover {
 
 .secondary-nav:hover {
    box-shadow: 0 0.5em 0.5em -0.4em #000;
-   transform: translateY(-0.35em);
-   transition: linear .3s;
+   transform: translateY(-0.2em);
    border-radius: 2rem;
 }
 
 .shopping-cart i{
    font-size: 2.25em;
    color: #fff;
-   transition: color .3s linear;
+   transition: color ease 300ms;
 }
 
 .shopping-cart i:hover {
    color: #000;
-   transition: all .3s linear;
 }
 
 .cta-black {
    text-decoration: none;
    color: #fff;
-   background-color: #000;
+   background: #000;
    max-width: 200px;
    padding: 12.5px var(--padding-large);
    border-radius: 6px;
    text-align: center;
    display: block;
-   transition: linear .3s;
+   transition: background ease 300ms;
 }
 
 .cta-black:hover {
-   background-color: #777777;
-   transition: all ease-in-out 300ms;
+   background: var(--cta-hover-purple);
+   
 }
 
 .active-page {
@@ -204,22 +203,21 @@ nav li a:hover {
 /* Forms focus */
 
 input:focus,
-textarea:focus {
+textarea:focus,
+select:focus {
    outline: none !important;
    border: 2px solid #a231ca;
-   transition: linear .25s;
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus {
    outline: none !important;
    border: 2px solid #000;
-   transition: linear .25s;
 }
 
 input,
 textarea {
-   transition: linear .25s;
+   transition: border ease 200ms;
 }
 
 /* Footer */
@@ -233,7 +231,7 @@ footer {
    color: #fff;
 }
 
-/* Responsive */
+/* Responsive styling */
 
 @media (min-width: 730px) {
    nav,

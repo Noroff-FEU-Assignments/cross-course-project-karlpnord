@@ -163,7 +163,7 @@
 }
 
 .trending-games-cta:hover {
-   background: #1d1d1d;
+   background: var(--cta-hover-purple);
 }
 
 @media (min-width: 900px) {

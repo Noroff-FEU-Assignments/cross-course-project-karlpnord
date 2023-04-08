@@ -45,26 +45,27 @@ main {
 }
 
 .cta-purple2 {
-   background-color: var(--main-color-purple);
+   background: var(--main-color-purple);
    color: #fff;
    border-radius: 8px;
-   transition: all .3s;
+   transition: background ease 300ms;
 }
 
 .cta-white {
    color: #000;
    border-radius: 8px;
-   transition: all .3s;
+   transition: background ease 300ms;
+   background: #fff;
 }
 
 .cta-purple2:hover {
-   background-color: var(--cta-hover-purple);
-   transition: all .3s;
+   background: var(--cta-hover-purple);
+   
 }
 
 .cta-white:hover {
-   background-color: var(--lg-bgcolor);
-   transition: all .3s;
+   background: var(--lg-bgcolor);
+   
 }
 
 /* Responsive */

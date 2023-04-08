@@ -65,7 +65,7 @@ main {
 .close-button i {
    font-size: 2em;
    color: #000;
-   transition: linear .3s;
+   transition: linear 300ms;
 }
 
 .product-item a {
@@ -75,7 +75,6 @@ main {
 .product-item a i:hover {
    color: var(--main-color-purple);
    transform: translateY(-0.075em);
-   transition: linear .3s;
 }
 
 @media screen and (min-width: 730px) {
