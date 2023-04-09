@@ -65,6 +65,8 @@ main {
 .grid-article h2 {
    font-size: 1.75em;
    margin-bottom: var(--margin-small);
+   font-family: "Righteous", "Montserrat", sans-serif;
+   font-weight: 300;
 }
 
 .cursive {
@@ -84,7 +86,7 @@ main {
 
    .grid-vertical-line {
       display: flex;
-      border-left: 1px solid #000;
+      border-left: 2px solid var(--main-color-purple);
       margin: var(--margin-xlarge) 0;
    }
 }

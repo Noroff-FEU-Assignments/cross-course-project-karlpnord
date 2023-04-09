@@ -10,6 +10,11 @@
    src: url("/fonts/Teko-Regular.ttf") format("truetype");
 }
 
+@font-face {
+   font-family: "Righteous";
+   src: url("/fonts/Righteous-Regular.ttf") format("truetype");
+}
+
 /* Import variables */
 
 @import url(/css/variables.css);
@@ -122,14 +127,16 @@ nav li a:hover {
    background: var(--main-color-purple);
    color: #fff;
    text-decoration: none;
-   font-size: 1.5rem;
+   font-size: 1.5em;
    padding: var(--padding-small) var(--padding-xlarge);
    border-radius: 8px;
-   border: 0px;
    display: block;
    max-width: 250px;
    text-align: center;
    transition: background ease 300ms;
+   font-family: "Toko", "Montserrat", sans-serif;
+   letter-spacing: 3px;
+   text-transform: uppercase;
 }
 
 .cta-purple:hover {
@@ -184,6 +191,9 @@ nav li a:hover {
    text-align: center;
    display: block;
    transition: background ease 300ms;
+   font-family: "Toko", "Montserrat", sans-serif;
+   letter-spacing: 3px;
+   text-transform: uppercase;
 }
 
 .cta-black:hover {
