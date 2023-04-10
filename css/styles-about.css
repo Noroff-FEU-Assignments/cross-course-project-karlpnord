@@ -65,7 +65,7 @@ main {
 .grid-article h2 {
    font-size: 1.75em;
    margin-bottom: var(--margin-small);
-   font-family: "Righteous", "Montserrat", sans-serif;
+   font-family: var(--ff-right);
    font-weight: 300;
 }
 

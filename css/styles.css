@@ -1,20 +1,3 @@
-/* Font Face and typography */
-
-@font-face {
-   font-family: "Montserrat";
-   src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
-}
-
-@font-face {
-   font-family: "Toko";
-   src: url("/fonts/Teko-Regular.ttf") format("truetype");
-}
-
-@font-face {
-   font-family: "Righteous";
-   src: url("/fonts/Righteous-Regular.ttf") format("truetype");
-}
-
 /* Import variables */
 
 @import url(/css/variables.css);
@@ -33,7 +16,7 @@
  }
 
 body {
-   font-family: "Montserrat", Verdana, sans-serif;
+   font-family: var(--ff-mont);
    font-size: 16px;
    min-height: 100vh;
    min-height: 100dvh;
@@ -66,7 +49,7 @@ header {
    box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.61);
    position: relative;
    color: #fff;
-   font-family: "Toko", Verdana, sans-serif;
+   font-family: var(--ff-toko);
    letter-spacing: 1.25;
 }
 
@@ -127,16 +110,15 @@ nav li a:hover {
    background: var(--main-color-purple);
    color: #fff;
    text-decoration: none;
-   font-size: 1.5em;
-   padding: var(--padding-small) var(--padding-xlarge);
+   font-size: 1.75em;
+   text-transform: uppercase;
+   font-family: var(--ff-right);
    border-radius: 8px;
    display: block;
    max-width: 250px;
    text-align: center;
    transition: background ease 300ms;
-   font-family: "Toko", "Montserrat", sans-serif;
-   letter-spacing: 3px;
-   text-transform: uppercase;
+   padding: var(--padding-small) var(--padding-medium);
 }
 
 .cta-purple:hover {
@@ -156,17 +138,22 @@ nav li a:hover {
    background-color: var(--main-color-purple);
    border-radius: 2rem;
    box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.4);
+   padding: 0px 20px;
+   gap: 0.5em;
+   font-family: var(--ff-toko);
+   letter-spacing: 1px;
+   font-size: 2em;
+   color: #fff;
+   transitio: all ease 300ms;
 }
 
-.secondary-nav a,
-.secondary-nav i{
+.secondary-nav i {
    color: #fff;
-   padding: 2px 10px;
-   font-size: 1.5em;
+   font-size: 1.25em;
 }
 
 .secondary-nav:hover {
-   box-shadow: 0 0.5em 0.5em -0.4em #000;
+   box-shadow: 0 0.5em 0.5em -0.4em var(--main-color-purple);
    transform: translateY(-0.2em);
    border-radius: 2rem;
 }
@@ -191,7 +178,7 @@ nav li a:hover {
    text-align: center;
    display: block;
    transition: background ease 300ms;
-   font-family: "Toko", "Montserrat", sans-serif;
+   font-family: var(--ff-toko);
    letter-spacing: 3px;
    text-transform: uppercase;
 }

@@ -1,4 +1,24 @@
+@font-face {
+   font-family: "Montserrat";
+   src: url("/fonts/Montserrat-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Toko";
+   src: url("/fonts/Teko-Regular.ttf") format("truetype");
+}
+
+@font-face {
+   font-family: "Righteous";
+   src: url("/fonts/Righteous-Regular.ttf") format("truetype");
+}
+
 :root {
+   /* Font-family */
+   --ff-mont: "Montserrat", sans-serif;
+   --ff-toko: "Toko", "Montserrat", sans-serif;
+   --ff-right: "Righteous", "Montserrat", sans-serif;
+
    /* background */
    --bg-gradient-darken: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
    --bg-bannercolor: linear-gradient(to right, #a231ca, #4a00e0);

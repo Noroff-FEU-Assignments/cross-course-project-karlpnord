@@ -23,7 +23,7 @@ input[type="text"],
 input[type="email"],
 textarea[type="text"] {
    font-size: 1.2rem;
-   font-family: "Montserrat", Verdana, sans-serif;
+   font-family: var(--ff-mont);
    padding: var(--padding-xsmall);
    padding-left: var(--padding-small);
 }

@@ -49,7 +49,7 @@ main {
 }
 
 .product-item h2 {
-   font-family: "Toko", "Montserrat", sans-serif;
+   font-family: var(--ff-toko);
    letter-spacing: 1px;
    font-size: 2.5em;
 }

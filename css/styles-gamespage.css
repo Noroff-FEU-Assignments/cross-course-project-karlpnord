@@ -9,7 +9,7 @@ label {
 }
 
 form option {
-   font-family: "Montserrat", Verdana, sans-serif;
+   font-family: var(--ff-mont);
    font-size: 18px;
 }
 
@@ -76,7 +76,7 @@ select {
 }
 
 .gameinfo h3 {
-   font-family: "Toko", "Montserrat", Verdana, sans-serif;
+   font-family: var(--ff-toko);
    letter-spacing: 1px;
    font-size: 1.5em;
    margin-top: 15px;

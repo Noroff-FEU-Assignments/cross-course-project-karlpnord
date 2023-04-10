@@ -27,7 +27,7 @@
 .main-home h1,
 .homepage-contact__item h2 {
    font-size: 1.25em;
-   font-family: "Righteous", "Montserrat", sans-serif;
+   font-family: var(--ff-right);
    text-transform: uppercase;
    letter-spacing: 3px;
 }
@@ -77,12 +77,12 @@
    flex-basis: 100%;
    text-align: center;
    margin-top: var(--margin-large);
-   font-family: "Toko", Verdana, sans-serif;
+   font-family: var(--ff-toko);
    font-size: 3em;
 }
 
 .review-section h3 {
-   font-family: "Toko", Verdana, sans-serif;
+   font-family: var(--ff-toko);
    letter-spacing: 3px;
 }
 
@@ -129,13 +129,13 @@
 }
 
 .trending-games h2 {
-   font-family: "Toko", "Montserrat", sans-serif;
+   font-family: var(--ff-toko);
    margin-top: var(--margin-large);
    font-size: 3em;
 }
 
 .trending-games h3 {
-   font-family: "Toko", "Montserrat", sans-serif;
+   font-family: var(--ff-toko);
    font-size: 2em;
    letter-spacing: 3px;
    text-transform: uppercase;
@@ -170,7 +170,7 @@
    display: block;
    border-radius: 8px;
    transition: background ease 300ms;
-   font-family: "Toko", "Montserrat", sans-serif;
+   font-family: var(--ff-toko);
    letter-spacing: 3px;
    text-transform: uppercase;
    font-size: 1.5em;
