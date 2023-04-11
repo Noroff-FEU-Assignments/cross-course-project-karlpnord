@@ -1,11 +1,5 @@
 @import url(/css/variables.css);
 
-input {
-   height: 40px;
-   border-radius: 8px;
-   border: 1px solid #000;
-}
-
 #cvc {
    max-width: 50%;
 }
@@ -21,14 +15,22 @@ input[type="tel"] {
    font-family: "Montserrat", Verdana, sans-serif;
    padding: var(--padding-xsmall);
    padding-left: 10px;
+   border: 1px solid #828282;
+   height: 40px;
+   border-radius: 8px;
 }
 
 select {
    height: 40px;
    border-radius: var(--padding-small);
-   border: 1px solid #000;
    font-size: 1.2rem;
    font-family: "Montserrat", Verdana, sans-serif;
+}
+
+#cvc,
+select,
+input[type="tel"] {
+   border: 1px solid #b3b3b3;
 }
 
 main {
@@ -41,7 +43,8 @@ main {
 
 .grid-container {
    max-width: 46rem;
-   min-height: 55vh;
+   min-height: 60vh;
+   margin: 0 var(--margin-medium);
    display: grid;
    grid-template-rows: 1fr 1fr;
    border-radius: 2rem;
@@ -50,33 +53,59 @@ main {
 }
 
 .personal-details {
-   font-size: 1.5rem;
    background-color: var(--main-color-purple);
    color: #fff;
    padding: 2.5rem;
    display: grid;
-   align-content: center;
+   align-content: flex-start;
    gap: 1rem;
 }
 
 .personal-details img {
    max-width: 200px;
-   margin-top: var(--margin-large);
 }
 
 .image-item {
    display: flex;
    justify-content: center;
+   margin-top: var(--margin-large);
 }
 
 .payment-details {
    padding: 2.5rem;
    display: grid;
-   align-content: center;
    gap: 1rem;
+   align-content: flex-start;
 }
 
-@media screen and (min-width: 730px) {
+.personal-details h2,
+.payment-details h2 {
+   font-size: 1.75em;
+}
+
+form {
+   display: flex;
+   flex-direction: column;
+}
+
+form > * {
+   margin: 5px 0;
+}
+
+form label {
+   font-size: 1em;
+   font-weight: 600;
+}
+
+input[type="text"] {
+   margin-bottom: 25px;
+}
+
+.cta-purple {
+   margin-top: 25px;
+}
+
+@media (min-width: 800px) {
    .grid-container {
       width: 60rem;
       min-width: 35rem;

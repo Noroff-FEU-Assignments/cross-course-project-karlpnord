@@ -35,43 +35,53 @@
         </a>
       </section>
       <div class="grid-container">
-        <form class="personal-details">
-          <h3>Personal Info:</h3>
-          <input type="text" id="name" placeholder="Name"/>
-          <input type="email" id="email" placeholder="E-mail"/>
+        <section class="personal-details">
+          <h2>Personal Info</h2>
+          <form>
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Name"/>
+            <label for="email">Email Address</label>
+            <input type="email" id="email" placeholder="E-mail"/>
+          </form> 
           <div class="image-item">
             <img src="/images/gamehublogo.png" alt="Gamehub logo">
           </div>
-        </form> 
-        <form class="payment-details">
-          <h3>Payment Info:</h3>
-          <input type="tel" id="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16"/>
-          <select name="expiry-month" id="expiry-month">
-            <option value="" hidden>Month</option>
-            <option value="01">January</option>
-            <option value="02">February</option>
-            <option value="03">March</option>
-            <option value="04">April</option>
-            <option value="05">May</option>
-            <option value="06">June</option>
-            <option value="07">July</option>
-            <option value="08">August</option>
-            <option value="09">September</option>
-            <option value="10">October</option>
-            <option value="11">November</option>
-            <option value="12">December</option>
-          </select>
-          <select name="expiry-year" id="expiry-year">
-            <option value="" hidden>Year</option>
-            <option value="23">2023</option>
-            <option value="24">2024</option>
-            <option value="25">2025</option>
-            <option value="26">2026</option>
-            <option value="27">2027</option>
-          </select>
-          <input type="tel" id="cvc" placeholder="CVC" maxlength="3" />
-          <a href="checkout-success.html" class="cta-purple">Pay Now</a>
-        </form>
+        </section>
+        <section class="payment-details">
+          <h2>Payment Info</h2>
+          <form>
+            <label for="card-number">Card Number</label>
+            <input type="tel" id="card-number" placeholder="xxxx-xxxx-xxxx-xxxx" maxlength="16"/>
+            <label for="expiry-month">Expiry month</label>
+            <select name="expiry-month" id="expiry-month">
+              <option value="" hidden>Month</option>
+              <option value="01">January</option>
+              <option value="02">February</option>
+              <option value="03">March</option>
+              <option value="04">April</option>
+              <option value="05">May</option>
+              <option value="06">June</option>
+              <option value="07">July</option>
+              <option value="08">August</option>
+              <option value="09">September</option>
+              <option value="10">October</option>
+              <option value="11">November</option>
+              <option value="12">December</option>
+            </select>
+            <label for="expiry-year">Expiry year</label>
+            <select name="expiry-year" id="expiry-year">
+              <option value="" hidden>Year</option>
+              <option value="23">2023</option>
+              <option value="24">2024</option>
+              <option value="25">2025</option>
+              <option value="26">2026</option>
+              <option value="27">2027</option>
+            </select>
+            <label for="cvc">CVC</label>
+            <input type="tel" id="cvc" placeholder="CVC" maxlength="3" />
+            <a href="checkout-success.html" class="cta-purple">Pay Now</a>
+          </form>
+        </section>
       </div>
     </main>
     <footer>
