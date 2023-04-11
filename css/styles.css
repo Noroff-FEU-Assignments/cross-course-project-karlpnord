@@ -138,21 +138,26 @@ nav li a:hover {
    background-color: var(--main-color-purple);
    border-radius: 2rem;
    box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.4);
-   padding: 0px 20px;
+   padding: var(--padding-xsmall) var(--padding-medium);
    gap: 0.5em;
-   font-family: var(--ff-toko);
-   letter-spacing: 1px;
-   font-size: 2em;
+   font-family: var(--ff-right);
+   font-weight: 200;
+   letter-spacing: 2px;
    color: #fff;
-   transitio: all ease 300ms;
+   transition: all ease 300ms;
+}
+
+.secondary-nav h1 {
+   font-size: 2.25em;
+   text-transform: uppercase;
 }
 
 .secondary-nav i {
    color: #fff;
-   font-size: 1.25em;
+   font-size: 2.5em;
 }
 
-.secondary-nav:hover {
+.secondary-nav a:hover {
    box-shadow: 0 0.5em 0.5em -0.4em var(--main-color-purple);
    transform: translateY(-0.2em);
    border-radius: 2rem;
@@ -185,7 +190,6 @@ nav li a:hover {
 
 .cta-black:hover {
    background: var(--cta-hover-purple);
-   
 }
 
 .active-page {
