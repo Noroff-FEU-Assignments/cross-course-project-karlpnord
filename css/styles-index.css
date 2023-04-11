@@ -22,14 +22,18 @@
 .main-home h1 {
    margin: 0 20px;
    line-height: 1.5;
+   font-size: 1.5em;
+}
+
+.homepage-contact__item h2 {
+   font-size: 1.75em;
 }
 
 .main-home h1,
 .homepage-contact__item h2 {
-   font-size: 1.25em;
    font-family: var(--ff-right);
    text-transform: uppercase;
-   letter-spacing: 3px;
+   letter-spacing: 1px;
 }
 
 .homepage-contact img {
@@ -51,7 +55,6 @@
 
 .homepage-contact__item {
    margin: 0px calc(2 * var(--margin-xlarge));
-   font-size: 12px;
    display: flex;
    flex-direction: column;
    align-items: center;
@@ -99,7 +102,6 @@
    gap: 2em;
    margin: 0 auto;
    max-width: 500px;
-   font-size: 1em;
    text-align: center;
    margin-bottom: var(--margin-large);
    margin-inline: var(--margin-xlarge);
@@ -170,10 +172,10 @@
    display: block;
    border-radius: 8px;
    transition: background ease 300ms;
-   font-family: var(--ff-toko);
-   letter-spacing: 3px;
+   font-family: var(--ff-right);
+   letter-spacing: 1px;
    text-transform: uppercase;
-   font-size: 1.5em;
+   font-size: 1.25em;
 }
 
 .trending-games-cta:hover {
@@ -205,7 +207,10 @@
       align-items: flex-start;
    }
 
-   .main-home h1,
+   .main-home h1 {
+      font-size: 2em;
+   }
+
    .homepage-contact__item h2 {
       font-size: 2em;
    }

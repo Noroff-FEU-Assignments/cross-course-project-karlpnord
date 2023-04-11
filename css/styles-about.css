@@ -15,7 +15,7 @@ main {
    place-items: center;
    align-content: center;
    gap: 3rem;
-   margin: var(--margin-xxlarge) 0;
+   margin: 80px 0;
 }
 
 .grid-container {

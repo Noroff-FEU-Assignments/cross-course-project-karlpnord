@@ -1,5 +1,9 @@
 @import url(/css/variables.css);
 
+.shopping-cart a i {
+   color: #000;
+}
+
 #cvc {
    max-width: 50%;
 }
@@ -43,7 +47,7 @@ main {
 
 .grid-container {
    max-width: 46rem;
-   min-height: 60vh;
+   min-height: 50vh;
    margin: 0 var(--margin-medium);
    display: grid;
    grid-template-rows: 1fr 1fr;

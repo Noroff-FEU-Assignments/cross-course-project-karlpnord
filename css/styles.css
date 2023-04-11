@@ -117,23 +117,17 @@ nav li a:hover {
    background: var(--cta-hover-purple);
 }
 
-.secondary-nav {
-   border-radius: 2rem;
-   transition: all ease 300ms;
-}
-
 .secondary-nav a {
    text-decoration: none;
    display: flex;
    align-items: center;
    justify-content: center;
    background-color: var(--main-color-purple);
-   border-radius: 2rem;
+   border-radius: 1.25rem;
    box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.4);
    padding: var(--padding-xsmall) var(--padding-medium);
    gap: 0.5em;
    font-family: var(--ff-right);
-   font-weight: 200;
    letter-spacing: 2px;
    color: #fff;
    transition: all ease 300ms;
@@ -152,7 +146,6 @@ nav li a:hover {
 .secondary-nav a:hover {
    box-shadow: 0 0.5em 0.5em -0.4em var(--main-color-purple);
    transform: translateY(-0.2em);
-   border-radius: 2rem;
 }
 
 .shopping-cart i{
@@ -175,9 +168,10 @@ nav li a:hover {
    text-align: center;
    display: block;
    transition: background ease 300ms;
-   font-family: var(--ff-toko);
-   letter-spacing: 3px;
+   font-family: var(--ff-right);
+   letter-spacing: 1px;
    text-transform: uppercase;
+   font-size: 0.8em;
 }
 
 .cta-black:hover {
