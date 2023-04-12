@@ -1,9 +1,5 @@
 @import url(/css/variables.css);
 
-.shopping-cart a i {
-   color: #000;
-}
-
 #cvc {
    max-width: 50%;
 }
@@ -12,28 +8,25 @@ input::placeholder {
    font-size: 1.2rem;
 }
 
-input[type="text"],
-input[type="email"],
-input[type="tel"] {
+input {
    font-size: 1.2rem;
    font-family: "Montserrat", Verdana, sans-serif;
    padding: var(--padding-xsmall);
    padding-left: 10px;
-   border: 1px solid #828282;
    height: 40px;
    border-radius: 8px;
 }
 
 select {
    height: 40px;
-   border-radius: var(--padding-small);
+   border-radius: 8px;
    font-size: 1.2rem;
    font-family: "Montserrat", Verdana, sans-serif;
 }
 
 #cvc,
 select,
-input[type="tel"] {
+input {
    border: 1px solid #b3b3b3;
 }
 
@@ -50,40 +43,32 @@ main {
    min-height: 50vh;
    margin: 0 var(--margin-medium);
    display: grid;
-   grid-template-rows: 1fr 1fr;
+   grid-template-rows: auto auto;
    border-radius: 2rem;
    overflow: hidden;
    box-shadow: var(--container-shadow);
+   border-top: 3px solid var(--main-color-purple);
+   border-bottom: 3px solid var(--main-color-purple);
 }
 
-.personal-details {
-   background-color: var(--main-color-purple);
-   color: #fff;
+.container__item {
    padding: 2.5rem;
    display: grid;
    align-content: flex-start;
    gap: 1rem;
-}
-
-.personal-details img {
-   max-width: 200px;
 }
 
 .image-item {
    display: flex;
    justify-content: center;
-   margin-top: var(--margin-large);
+   margin-top: var(--margin-xlarge);
 }
 
-.payment-details {
-   padding: 2.5rem;
-   display: grid;
-   gap: 1rem;
-   align-content: flex-start;
+.image-item img {
+   max-width: 200px;
 }
 
-.personal-details h2,
-.payment-details h2 {
+.container__item h2 {
    font-size: 1.75em;
 }
 

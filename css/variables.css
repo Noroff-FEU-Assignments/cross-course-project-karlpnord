@@ -50,5 +50,5 @@
    --padding-medium: calc(4 * var(--padding)); /* 20px */
    --padding-large: calc(6 * var(--padding)); /* 30px */
    --padding-xlarge: calc(8 * var(--padding)); /* 40px */
-   --padding-xxlarge: calc(10 * var(--padding)); /* 40px */
+   --padding-xxlarge: calc(10 * var(--padding)); /* 50px */
 }

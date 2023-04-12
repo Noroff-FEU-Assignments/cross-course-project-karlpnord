@@ -47,6 +47,7 @@ main {
    font-family: var(--ff-toko);
    letter-spacing: 1px;
    font-size: 2em;
+   text-transform: uppercase;
 }
 
 .product-item h4 {

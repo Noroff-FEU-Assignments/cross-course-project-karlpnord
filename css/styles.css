@@ -184,16 +184,13 @@ nav li a:hover {
 
 textarea:focus,
 select:focus,
-#cvc:focus,
-input[type="tel"]:focus {
-   outline: none !important;
-   border: 2px solid #a231ca;
-}
-
 input[type="text"]:focus,
-input[type="email"]:focus {
+textarea[type="text"]:focus,
+input[type="tel"]:focus,
+input[type="email"]:focus,
+#cvc:focus {
    outline: none !important;
-   border: 2px solid #000;
+   border: 2px solid var(--main-color-purple);
 }
 
 /* Footer */

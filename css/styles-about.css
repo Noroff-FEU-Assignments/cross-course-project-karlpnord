@@ -29,10 +29,12 @@ main {
    box-shadow: var(--container-shadow);
    text-align: center;
    gap: 2em;
+   border-top: 2px solid var(--main-color-purple);
+   border-bottom: 2px solid var(--main-color-purple);
 }
 
 .grid-horizontal-line {
-   border-bottom: 1px solid #000;
+   border-bottom: 2px solid var(--main-color-purple);
    max-height: 1rem;
    margin: 0 var(--margin-xlarge);
 }

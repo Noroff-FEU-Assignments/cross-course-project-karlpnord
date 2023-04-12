@@ -2,14 +2,10 @@
 
 input {
    height: 40px;
-   border-radius: 8px;
-   border: 1px solid #828282;
 }
 
 textarea {
    height: 200px;
-   border-radius: 8px;
-   border: 1px solid #b3b3b3;
    overflow-y: scroll;
    resize: none;
 }
@@ -27,6 +23,8 @@ textarea[type="text"] {
    font-family: var(--ff-mont);
    padding: var(--padding-xsmall);
    padding-left: var(--padding-small);
+   border: 1px solid #b3b3b3;
+   border-radius: 8px;
 }
 
 main {
@@ -46,11 +44,11 @@ main {
    border-radius: 2rem;
    overflow: hidden;
    box-shadow: var(--container-shadow);
+   border-top: 3px solid var(--main-color-purple);
+   border-bottom: 3px solid var(--main-color-purple);
 }
 
-.personal-details {
-   background-color: var(--main-color-purple);
-   color: #fff;
+.container__item {
    padding: 2.5rem;
    display: grid;
    align-content: center;
@@ -65,22 +63,14 @@ main {
 .image-item {
    display: flex;
    justify-content: center;
-   margin-top: var(--margin-large);
-}
-
-.message-details {
-   padding: 2.5rem;
-   display: grid;
-   align-content: center;
-   gap: 1rem;
+   margin-top: var(--margin-xlarge);
 }
 
 .message-details p {
    font-size: 1em;
 }
 
-.message-details h2,
-.personal-details h2 {
+.container__item h2 {
    font-size: 1.75rem;
 }
 
