@@ -9,29 +9,24 @@ main {
 
 .grid-container {
    max-width: 54rem;
-   min-height: 500px;
    display: grid;
-   grid-template-rows: 1fr 1fr;
+   grid-template-rows: auto 1fr;
    border-radius: 2rem;
    overflow: hidden;
-   box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.5);
-   margin: 80px;
+   box-shadow: var(--container-shadow);
+   margin: 80px 20px;
    position: relative;
    background-color: #fff;
 }
 
 .image-item {
-   text-align: center;
-   padding: 2.5rem;
-   display: grid;
-   align-content: center;
-   margin: 0 auto;
+   margin: 20px auto;
+   padding: 0 20px;
+   padding-top: 50px;
 }
 
 .image-item img {
-   margin-top: var(--margin-large);
-   margin-bottom: -50px;
-   max-width: 250px;
+   max-width: 200px;
    border-radius: 8px;
    box-shadow: 0 0.5em 0.5em -0.4em #000;
    transform: translateY(-0.25em);
@@ -51,7 +46,7 @@ main {
 .product-item h2 {
    font-family: var(--ff-toko);
    letter-spacing: 1px;
-   font-size: 2.5em;
+   font-size: 2em;
 }
 
 .product-item h4 {
@@ -60,6 +55,7 @@ main {
 
 .close-button {
    max-width: 30px;
+   text-decoration: none;
 }
 
 .close-button i {
@@ -68,11 +64,7 @@ main {
    transition: linear 300ms;
 }
 
-.product-item a {
-   text-decoration: none;
-}
-
-.product-item a i:hover {
+.close-button i:hover {
    color: var(--main-color-purple);
    transform: translateY(-0.075em);
 }
@@ -81,11 +73,12 @@ main {
    display: none;
 }
 
-@media (min-width: 800px) {
+@media (min-width: 730px) {
    .grid-container {
-      grid-template-columns: 1fr auto 1fr;
+      grid-template-columns: auto auto 1fr;
       grid-template-rows: 1fr;
       margin: 80px 20px;
+      min-height: 50vh;
    }
 
    .product-item {
@@ -104,9 +97,13 @@ main {
       align-items: center;
    }
 
+   .image-item {
+      margin: auto 0;
+      padding: 20px 50px;
+   }
+
    .image-item img {
-      margin: 0 auto;
-      max-width: 300px;
+      max-width: 250px;
    }
 
    .vertical-line {
