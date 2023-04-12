@@ -117,14 +117,13 @@ nav li a:hover {
    display: flex;
    align-items: center;
    justify-content: center;
-   background-color: var(--main-color-purple);
-   border-radius: 1.25rem;
-   box-shadow: 1px -1px 29px 2px rgba(0,0,0,0.4);
+   background-color: #fff;
+   border-radius: 8px;
    padding: var(--padding-xsmall) var(--padding-medium);
    gap: 0.5em;
    font-family: var(--ff-right);
    letter-spacing: 2px;
-   color: #fff;
+   color: #000;
    transition: all ease 300ms;
 }
 
@@ -134,12 +133,11 @@ nav li a:hover {
 }
 
 .secondary-nav i {
-   color: #fff;
    font-size: 2.5em;
 }
 
 .secondary-nav a:hover {
-   box-shadow: 0 0.5em 0.5em -0.4em var(--main-color-purple);
+   box-shadow: var(--container-shadow);
    transform: translateY(-0.2em);
 }
 
@@ -235,7 +233,7 @@ footer {
       border-top: 0;
       border-bottom: 0;
       background-image: none;
-      margin-left: 50px;
+      padding-left: 5em;
    }
 
    .shopping-cart{

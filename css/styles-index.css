@@ -199,7 +199,7 @@
 @media (min-width: 730px) {
    .main-home {
       background-image: var(--bg-gradient-darken), url("../images/game-console-g836463e15_1920.jpg");
-      min-height: 100vh;
+      min-height: calc(100vh - 80px);
    }
 
    .main-home h1 {
