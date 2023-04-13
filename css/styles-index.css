@@ -21,7 +21,7 @@
 }
 
 .text-purple {
-   color: var(--cta-hover-purple);
+   color: var(--clr-primary);
    font-size: 1.25em;
    display: inline-block;
 }
@@ -193,13 +193,13 @@
    display: flex;
    justify-content: center;
    gap: 1em;
-   color: var(--main-color-purple);
+   color: var(--clr-primary);
    font-size: 2.5em;
 }
 
 @media (min-width: 730px) {
    .main-home {
-      background-image: var(--bg-gradient-darken), url("../images/game-console-g836463e15_1920.jpg");
+      background-image: url("../images/game-console-g836463e15_1920.jpg");
       min-height: calc(100vh - 80px);
    }
 

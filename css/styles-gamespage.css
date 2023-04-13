@@ -16,9 +16,12 @@ form option {
 select {
    width: 150px;
    height: 30px;
-   border-radius: 4px;
-   border: 1px solid #7c7c7c;
 }
+
+form label {
+   font-size: 18px;
+}
+
 
 .image-item,
 .form-item {
@@ -27,7 +30,7 @@ select {
 
 .container {
    display: flex;
-   margin: var(--margin-xxlarge) auto;
+   margin: 80px auto;
    justify-content: center;
 }
 
@@ -84,7 +87,7 @@ select {
 }
 
 .gameinfo h3 {
-   margin-bottom: var(--margin);
+   margin-bottom: 5px;
    font-size: 0.9em;
 }
 
@@ -99,8 +102,6 @@ select {
       max-width: 60em;
       grid-row-gap: 4em;
    }
-
-   
 }
 
 @media (min-width: 1300px) {

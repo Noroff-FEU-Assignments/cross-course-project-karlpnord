@@ -14,41 +14,19 @@
 }
 
 :root {
-   /* Font-family */
+   /* font-family */
    --ff-mont: "Montserrat", sans-serif;
    --ff-toko: "Toko", "Montserrat", sans-serif;
    --ff-right: "Righteous", "Montserrat", sans-serif;
 
    /* background */
-   --bg-gradient-darken: linear-gradient(rgba(0, 0, 0, 0.527), rgba(0, 0, 0, 0.5));
-   --bg-bannercolor: linear-gradient(to right, #a231ca, #4a00e0);
-   --lg-bgcolor: #c4c4c4;
-   --gamespage-bg-item: linear-gradient(120deg, #a231ca, #4a00e0);
+   --bg-banner: linear-gradient(to right, #a231ca, #4a00e0);
+   --bg-light: #c4c4c4;
    
    /* colors */
-   --main-color-purple: #a231ca;
-   --cta-hover-purple: #4a00e0;
+   --clr-primary: #a231ca;
+   --clr-secondary: #4a00e0;
 
    /* box shadow */
    --container-shadow: 1px -1px 29px 2px rgba(0,0,0,0.2);
-
-   /* spacing */
-   --spacing-unit: 10px;
-
-   --margin: calc(0.5 * var(--spacing-unit));
-   --padding: calc(0.5 * var(--spacing-unit));
-
-   --margin-xsmall: var(--margin); /* 5px */
-   --margin-small: calc(2 * var(--margin)); /* 10px */
-   --margin-medium: calc(4 * var(--margin)); /* 20px */
-   --margin-large: calc(6 * var(--margin)); /* 30px */
-   --margin-xlarge: calc(8 * var(--margin)); /* 40px */
-   --margin-xxlarge: calc(10 * var(--margin)); /* 50px */
-
-   --padding-xsmall: var(--padding); /* 5px */
-   --padding-small: calc(2 * var(--padding)); /* 10px */
-   --padding-medium: calc(4 * var(--padding)); /* 20px */
-   --padding-large: calc(6 * var(--padding)); /* 30px */
-   --padding-xlarge: calc(8 * var(--padding)); /* 40px */
-   --padding-xxlarge: calc(10 * var(--padding)); /* 50px */
 }

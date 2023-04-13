@@ -32,7 +32,7 @@ body {
 /* Navigation and header*/
 
 header {
-   background-image: var(--bg-bannercolor);
+   background-image: var(--bg-banner);
    display: flex;
    align-items: center;
    width: 100%;
@@ -71,14 +71,14 @@ nav {
 }
 
 nav ul {
-   background-image: var(--bg-bannercolor);
+   background-image: var(--bg-banner);
    border-top: 1px solid #fff;
    border-bottom: 1px solid #fff;
 }
 
 nav li {
    list-style-type: none;
-   padding: var(--padding-small) var(--padding-medium);
+   padding: 10px 20px;
 }
 
 nav li a {
@@ -94,7 +94,7 @@ nav li a:hover {
 /* CTA's, aref's and hover */
 
 .cta-purple {
-   background: var(--main-color-purple);
+   background: var(--clr-primary);
    color: #fff;
    text-decoration: none;
    font-size: 1.5em;
@@ -105,11 +105,11 @@ nav li a:hover {
    max-width: 250px;
    text-align: center;
    transition: background ease 300ms;
-   padding: var(--padding-small) var(--padding-medium);
+   padding: 10px 20px;
 }
 
 .cta-purple:hover {
-   background: var(--cta-hover-purple);
+   background: var(--clr-secondary);
 }
 
 .secondary-nav a {
@@ -119,7 +119,7 @@ nav li a:hover {
    justify-content: center;
    background-color: #fff;
    border-radius: 8px;
-   padding: var(--padding-xsmall) var(--padding-medium);
+   padding: 5px 20px;
    gap: 0.5em;
    font-family: var(--ff-right);
    letter-spacing: 2px;
@@ -156,7 +156,7 @@ nav li a:hover {
    color: #fff;
    background: #000;
    max-width: 200px;
-   padding: 12.5px var(--padding-large);
+   padding: 12.5px 30px;
    border-radius: 6px;
    text-align: center;
    display: block;
@@ -168,7 +168,7 @@ nav li a:hover {
 }
 
 .cta-black:hover {
-   background: var(--cta-hover-purple);
+   background: var(--clr-secondary);
 }
 
 .active-page {
@@ -180,7 +180,7 @@ nav li a:hover {
    text-decoration: none;
 }
 
-/* Forms focus */
+/* Forms styling */
 
 textarea:focus,
 select:focus,
@@ -190,7 +190,41 @@ input[type="tel"]:focus,
 input[type="email"]:focus,
 #cvc:focus {
    outline: none !important;
-   border: 2px solid var(--main-color-purple);
+   border: 2px solid var(--clr-primary);
+}
+
+#cvc,
+select,
+input,
+textarea {
+   border: 1px solid #b3b3b3;
+}
+
+input,
+textarea {
+   font-size: 1em;
+   font-family: "Montserrat", Verdana, sans-serif;
+   padding: 5px;
+   padding-left: 10px;
+   border-radius: 8px;
+}
+
+input::placeholder,
+textarea::placeholder {
+   font-size: 1em;
+   color: #969696;
+}
+
+form label {
+   font-size: 0.75em;
+   font-weight: 600;
+}
+
+select {
+   height: 40px;
+   border-radius: 8px;
+   font-size: 1em;
+   font-family: "Montserrat", Verdana, sans-serif;
 }
 
 /* Footer */
@@ -198,9 +232,9 @@ input[type="email"]:focus,
 footer {
    width: 100%;
    text-align: center;
-   padding: var(--padding-large) 0;
+   padding: 30px 0;
    font-weight: 600;
-   background-image: var(--bg-bannercolor);
+   background-image: var(--bg-banner);
    color: #fff;
 }
 
@@ -233,7 +267,7 @@ footer {
       padding-left: 5em;
    }
 
-   .shopping-cart{
-      margin: 0 var(--margin-xlarge);
+   .shopping-cart {
+      margin: 0 40px;
    }
 }

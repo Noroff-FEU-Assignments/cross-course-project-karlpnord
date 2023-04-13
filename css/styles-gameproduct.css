@@ -4,7 +4,7 @@ main {
    display: grid;
    place-items: center;
    align-content: center;
-   background-color: var(--lg-bgcolor);
+   background-color: var(--bg-light);
 }
 
 .grid-container {
@@ -66,7 +66,7 @@ main {
 }
 
 .close-button i:hover {
-   color: var(--main-color-purple);
+   color: var(--clr-primary);
    transform: translateY(-0.075em);
 }
 

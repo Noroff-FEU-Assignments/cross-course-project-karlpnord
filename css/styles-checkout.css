@@ -1,75 +1,12 @@
 @import url(/css/variables.css);
 
+/* Form styling */
 #cvc {
    max-width: 50%;
 }
 
-input::placeholder {
-   font-size: 1.2rem;
-}
-
 input {
-   font-size: 1.2rem;
-   font-family: "Montserrat", Verdana, sans-serif;
-   padding: var(--padding-xsmall);
-   padding-left: 10px;
    height: 40px;
-   border-radius: 8px;
-}
-
-select {
-   height: 40px;
-   border-radius: 8px;
-   font-size: 1.2rem;
-   font-family: "Montserrat", Verdana, sans-serif;
-}
-
-#cvc,
-select,
-input {
-   border: 1px solid #b3b3b3;
-}
-
-main {
-   display: grid;
-   place-items: center;
-   align-content: center;
-   gap: 3rem;
-   margin: 80px 0;
-}
-
-.grid-container {
-   max-width: 46rem;
-   min-height: 50vh;
-   margin: 0 var(--margin-medium);
-   display: grid;
-   grid-template-rows: auto auto;
-   border-radius: 2rem;
-   overflow: hidden;
-   box-shadow: var(--container-shadow);
-   border-top: 3px solid var(--main-color-purple);
-   border-bottom: 3px solid var(--main-color-purple);
-}
-
-.container__item {
-   padding: 2.5rem;
-   display: grid;
-   align-content: flex-start;
-   gap: 1rem;
-}
-
-.image-item {
-   display: flex;
-   justify-content: center;
-   margin-top: var(--margin-xlarge);
-}
-
-.image-item img {
-   max-width: 200px;
-}
-
-.container__item h2 {
-   font-size: 1.75em;
 }
 
 form {
@@ -81,24 +18,75 @@ form > * {
    margin: 5px 0;
 }
 
-form label {
-   font-size: 1em;
-   font-weight: 600;
-}
-
 input[type="text"] {
    margin-bottom: 25px;
 }
 
+
+/* Main content styling */
+main {
+   display: grid;
+   place-items: center;
+   align-content: center;
+   gap: 3rem;
+   margin: 80px 0;
+}
+
+.grid-container {
+   max-width: 46rem;
+   min-height: 50vh;
+   margin: 0 20px;
+   display: grid;
+   grid-template-rows: auto auto;
+   border-radius: 2rem;
+   overflow: hidden;
+   box-shadow: var(--container-shadow);
+   border-top: 3px solid var(--clr-primary);
+   border-bottom: 3px solid var(--clr-primary);
+}
+
+.container__item {
+   padding: 2.5rem;
+   display: grid;
+   align-content: flex-start;
+   gap: 1rem;
+}
+
+.container__item h2 {
+   font-size: 1.25em;
+}
+
+/* Personal details image styling */
+
+.image-item {
+   display: flex;
+   justify-content: center;
+   margin-top: 40px;
+}
+
+.image-item img {
+   max-width: 200px;
+}
+
+/* CTA additional styling */
 .cta-purple {
    margin-top: 25px;
 }
 
+/* Responsive styling */
 @media (min-width: 800px) {
    .grid-container {
       width: 60rem;
       min-width: 35rem;
       grid-template-columns: 1fr 1fr;
       grid-template-rows: 1fr;
+   }
+
+   form label {
+      font-size: 1em;
+   }
+
+   .container__item h2 {
+      font-size: 1.6em;
    }
 }

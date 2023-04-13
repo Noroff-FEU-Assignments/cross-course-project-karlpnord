@@ -1,5 +1,6 @@
 @import url(/css/variables.css);
 
+/* Form styling */
 input {
    height: 40px;
 }
@@ -10,22 +11,20 @@ textarea {
    resize: none;
 }
 
-input::placeholder,
-textarea::placeholder {
-   font-size: 1.2rem;
-   color: #969696;
+form {
+   display: flex;
+   flex-direction: column;
 }
 
-input[type="text"],
-input[type="email"],
-textarea[type="text"] {
-   font-size: 1.2rem;
-   font-family: var(--ff-mont);
-   padding: var(--padding-xsmall);
-   padding-left: var(--padding-small);
-   border: 1px solid #b3b3b3;
-   border-radius: 8px;
+form > * {
+   margin: 5px 0;
 }
+
+input[type="text"] {
+   margin-bottom: 25px;
+}
+
+/* Main content styling */
 
 main {
    display: grid;
@@ -38,14 +37,14 @@ main {
 .grid-container {
    max-width: 46rem;
    min-height: 55vh;
-   margin: 0 var(--margin-medium);
+   margin: 0 20px;
    display: grid;
    grid-template-rows: 1fr 1fr;
    border-radius: 2rem;
    overflow: hidden;
    box-shadow: var(--container-shadow);
-   border-top: 3px solid var(--main-color-purple);
-   border-bottom: 3px solid var(--main-color-purple);
+   border-top: 3px solid var(--clr-primary);
+   border-bottom: 3px solid var(--clr-primary);
 }
 
 .container__item {
@@ -55,43 +54,27 @@ main {
    gap: 1rem;
 }
 
+.container__item h2 {
+   font-size: 1.25em;
+}
+
+/* Personal details item styling */
 .personal-details img {
    max-width: 200px;
-   margin-top: var(--margin-large);
 }
 
 .image-item {
    display: flex;
    justify-content: center;
-   margin-top: var(--margin-xlarge);
+   margin-top: 40px;
 }
 
+/* Message details item styling*/
 .message-details p {
-   font-size: 1em;
+   font-size: 0.9em;
 }
 
-.container__item h2 {
-   font-size: 1.75rem;
-}
-
-form {
-   display: flex;
-   flex-direction: column;
-}
-
-form > * {
-   margin: 5px 0;
-}
-
-form label {
-   font-size: 1em;
-   font-weight: 600;
-}
-
-input[type="text"] {
-   margin-bottom: 25px;
-}
-
+/* Responsive styling */
 @media (min-width: 800px) {
    .grid-container {
       width: 60rem;
@@ -106,6 +89,14 @@ input[type="text"] {
    }
 
    .message-details p {
-      font-size: 1.25em;
+      font-size: 1.1em;
+   }
+
+   form label {
+      font-size: 1em;
+   }
+
+   .container__item h2 {
+      font-size: 1.6em;
    }
 }
