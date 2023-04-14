@@ -200,6 +200,7 @@
 @media (min-width: 730px) {
    .main-home {
       background-image: url("../images/game-console-g836463e15_1920.jpg");
+      background-position: center;
       min-height: calc(100vh - 80px);
    }
 
