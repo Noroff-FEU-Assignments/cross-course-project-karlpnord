@@ -11,7 +11,7 @@ main {
 }
 
 .grid-container {
-   max-width: 46rem;
+   max-width: 25rem;
    min-height: 55vh;
    margin: 0 20px;
    display: grid;
@@ -46,13 +46,9 @@ main {
 }
 
 /* Vertical and horizontal line styling */
-.grid-horizontal-line {
+.grid-line {
    border-bottom: 2px solid var(--clr-primary);
    margin: 0 40px;
-}
-
-.grid-vertical-line {
-   display: none;
 }
 
 /* Image and logo grid item styling*/
@@ -67,13 +63,13 @@ main {
 }
 
 .logos i {
-   font-size: 3rem;
+   font-size: 2.25em;
    color: var(--clr-primary);
    padding-right: 15px;
 }
 
 .image-item img {
-   max-width: 300px;
+   max-width: 250px;
 }
 
 /* Responsive styling */
@@ -89,9 +85,14 @@ main {
       display: none;
    }
 
-   .grid-vertical-line {
+   .grid-line {
       display: flex;
+      border-bottom: none;
       border-left: 2px solid var(--clr-primary);
       margin: 40px 0;
+   }
+
+   .logos i {
+      font-size: 2.5em;
    }
 }
