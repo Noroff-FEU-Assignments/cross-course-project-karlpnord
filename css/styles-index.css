@@ -244,11 +244,32 @@
    }
 }
 
+@media (min-width: 1000px) {
+   .homepage-games {
+      grid-template-areas:
+      '. title title .'
+      '. game1 game2 .'
+      '. game3 game3 .'
+      '. cta cta .';
+      grid-auto-rows: auto 1fr 1fr auto;
+   }
+}
+
 @media (min-width: 1300px) {
    .homepage-games {
+      grid-column-gap: 1em;
       grid-template-areas:
       '. title .'
       'game1 game2 game3'
       '. cta .';
+      grid-auto-rows: auto 1fr auto;
+   }
+
+   .homepage-games__item {
+      margin-inline: auto;
+   }
+
+   .assassin {
+      min-width: 0;
    }
 }

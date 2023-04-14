@@ -1,0 +1,76 @@
+@import url(/css/variables.css);
+
+main {
+   display: grid;
+   place-items: center;
+   align-content: center;
+   gap: 3rem;
+   margin: 80px 0;
+}
+
+.container {
+   display: flex;
+   flex-direction: column;
+   gap: 2em;
+   max-width: 30em;
+   min-height: fit-content;
+   border-radius: 2rem;
+   overflow: hidden;
+   box-shadow: var(--container-shadow);
+   border-top: 3px solid var(--clr-primary);
+   border-bottom: 3px solid var(--clr-primary);
+   margin: 0 20px;
+   padding: 30px 0;
+}
+
+.section-heading {
+   text-align: center;
+   display: flex;
+   flex-direction: column;
+   gap: 1em;
+   padding-inline: 25px;
+}
+
+.section-heading h2 {
+   font-family: var(--ff-right);
+   letter-spacing: 1px;
+   font-size: 2em;
+}
+
+.product-item {
+   display: flex;
+   align-items: center;
+   justify-content: space-evenly;
+   background: #efefef;
+   margin-inline: 20px;
+   padding: 10px 0;
+   border-radius: 25px;
+}
+
+.product-item img {
+   max-width: 50px;
+   border-radius: 5px;
+}
+
+.product-item h2 {
+   font-size: 1em;
+}
+
+.product-item h3 {
+   font-size: 1em;
+}
+
+.totalprice-item {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   gap: 1em;
+}
+
+.totalprice-item h2 {
+   
+}
+
+.cta-purple {
+   width: 100%;
+}
