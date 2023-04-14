@@ -24,9 +24,10 @@ main {
    margin: 20px 0;
 }
 
-.article-item h2 {
-   font-weight: 900;
+.article-item h1 {
    font-size: 2em;
+   font-family: var(--ff-right);
+   letter-spacing: 1px;
 }
 
 .button-item {

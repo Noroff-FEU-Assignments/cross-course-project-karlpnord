@@ -43,14 +43,14 @@ main {
    text-align: center;
 }
 
-.product-item h2 {
+.product-item h1 {
    font-family: var(--ff-toko);
    letter-spacing: 1px;
    font-size: 2em;
    text-transform: uppercase;
 }
 
-.product-item h4 {
+.product-item h2 {
    font-size: 1.3em;
 }
 

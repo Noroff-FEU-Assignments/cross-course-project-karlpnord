@@ -42,12 +42,12 @@
    font-size: 1.75em;
 }
 
-.games__item__article h4,
+.games__item__article h5,
 .homepage-about h3 {
    font-size: 1.25em;
 }
 
-.games__item__article h5 {
+.games__item__article h4 {
    font-size: 1em;
 }
 
