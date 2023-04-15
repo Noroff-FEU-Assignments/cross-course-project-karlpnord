@@ -105,7 +105,7 @@ main {
    }
 
    .image-item img {
-      max-width: 250px;
+      max-width: 200px;
    }
 
    .vertical-line {
@@ -113,5 +113,15 @@ main {
       display: initial;
       margin: 50px 0;
       box-shadow: var(--container-shadow);
+   }
+}
+
+@media (min-width: 1300px) {
+   .image-item img {
+      max-width: 250px;
+   }
+
+   .grid-container {
+      min-height: 60vh;
    }
 }
