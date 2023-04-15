@@ -4,7 +4,6 @@ main {
    display: grid;
    place-items: center;
    align-content: center;
-   background-color: var(--bg-light);
 }
 
 .grid-container {
@@ -17,6 +16,8 @@ main {
    margin: 80px 20px;
    position: relative;
    background-color: #fff;
+   border-top: 2px solid var(--clr-primary);
+   border-bottom: 2px solid var(--clr-primary);
 }
 
 .image-item {

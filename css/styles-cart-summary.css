@@ -48,7 +48,7 @@ main {
 }
 
 .product-item img {
-   max-width: 50px;
+   max-width: 35px;
    border-radius: 5px;
 }
 
@@ -78,4 +78,19 @@ main {
 
 .cta-purple {
    min-width: 100%;
+}
+
+@media (min-width: 730px) {
+   .product-item h2 {
+      font-size: 1.5em;
+   }
+
+   .product-item img {
+      max-width: 50px;
+   }
+
+   .totalprice-item,
+   .product-item {
+      margin-inline: 35px;
+   }
 }
