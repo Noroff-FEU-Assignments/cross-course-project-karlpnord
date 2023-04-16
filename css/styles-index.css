@@ -39,7 +39,7 @@
    font-family: var(--ff-toko);
    letter-spacing: 1px;
    text-transform: uppercase;
-   font-size: 1.75em;
+   font-size: 1.5em;
 }
 
 .games__item__article h5,
@@ -95,28 +95,13 @@
    transform: translateY(-0.25em);
 }
 
-.homepage-games__title { grid-area: title }
-.forgelegend { grid-area: game1 }
-.cyberpunk { grid-area: game2 } 
-.assassin { grid-area: game3 }
-.cta-purple {grid-area: cta }
-
 .homepage-games {
-   display: grid;
-   grid-template-areas:
-   'title'
-   'game1'
-   'game2'
-   'game3'
-   'cta';
+   display: flex;
+   flex-direction: column;
    gap: 3em;
    max-width: 30em;
    margin: 100px auto;
    text-align: center;
-}
-
-.homepage-games .cta-purple {
-   margin-inline: auto;
 }
 
 .homepage-games__item {
@@ -126,6 +111,11 @@
    box-shadow: var(--container-shadow);
    padding: 30px;
    border-radius: 12px;
+   max-width: 90%;
+   margin: 0 20px;
+}
+
+.homepage-games .cta-purple {
    margin-inline: auto;
 }
 
@@ -152,7 +142,7 @@
    align-items: center;
    text-align: center;
    margin: 0px auto;
-   padding-inline: 25px;
+   padding-inline: 30px;
    gap: 0.3em;
    max-width: 30em;
 }
@@ -165,7 +155,7 @@
 .homepage-reviews {
    justify-content: center;
    align-items: center;
-   gap: 2em;
+   gap: 3em;
    max-width: 30em;
    margin: 100px auto;
 }
@@ -181,20 +171,23 @@
 .homepage-about {
    gap: 1.5em;
    text-align: center;
-   margin: 100px auto;
-   padding-inline: 25px;
+   padding: 30px;
    letter-spacing: 1px;
-   max-width: 30em;
-   align-items: center;
+   max-width: 90%;
    justify-content: center;
+   margin: 0 auto;
+   box-shadow: var(--container-shadow);
+   border-radius: 12px;
+   background: #414141;
+   color: #fff;
 }
 
 .icons {
    display: flex;
    justify-content: center;
    gap: 1em;
-   color: var(--clr-primary);
    font-size: 2.5em;
+   padding-top: 25px;
 }
 
 @media (min-width: 730px) {
@@ -214,24 +207,26 @@
    }
 
    .homepage-contact h2,
-   .homepage-reviews h2 {
+   .homepage-reviews h2,
+   .homepage-games h2,
+   .homepage-about h2 {
       flex-basis: 100%;
       text-align: center;
+      font-size: 2.5em;
    }
 
    .homepage-reviews__item {
       flex: 1;
    }
 
-   .homepage-games {
-      max-width: 80em;
-   }
 
    .homepage-reviews,
    .homepage-about {
       max-width: 60em;
-      padding-inline: 20px;
-      gap: 3em;
+   }
+
+   .homepage-about {
+      padding: 40px;
    }
 
    .homepage-contact,
@@ -243,34 +238,27 @@
       max-width: 40em;
       min-height: 30vh;
    }
-}
 
-@media (min-width: 1000px) {
    .homepage-games {
-      grid-template-areas:
-      '. title title .'
-      '. game1 game2 .'
-      '. game3 game3 .'
-      '. cta cta .';
-      grid-auto-rows: auto 1fr 1fr auto;
-   }
-}
-
-@media (min-width: 1300px) {
-   .homepage-games {
-      grid-column-gap: 1em;
-      grid-template-areas:
-      '. title .'
-      'game1 game2 game3'
-      '. cta .';
-      grid-auto-rows: auto 1fr auto;
+      max-width: 60em;
+      flex-direction: row;
+      flex-wrap: wrap;
    }
 
    .homepage-games__item {
+      flex: 1;
       margin-inline: auto;
    }
+   
+   .homepage-games .cta-purple {
+      flex-basis: 100%;
+   }
 
-   .assassin {
-      min-width: 0;
+   .games__item__article h3 {
+      font-size: 1.8em;
+   }
+
+   .games__item__article {
+      text-align: left;
    }
 }
