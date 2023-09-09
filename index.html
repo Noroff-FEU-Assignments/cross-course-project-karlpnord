@@ -7,6 +7,7 @@
     <title>GameHub | Home</title>
     <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/styles-index.css" rel="stylesheet">
+    <link href="/css/loading-animation.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -31,47 +32,12 @@
         <img src="/images/gamehublogonotext.png" alt="Gamehub logo">
         <h1>The Universe of <span class="line-break"></span>Games</h1>
       </section>
+
       <section class="homepage-games">
         <h2>Our Games</h2>
-        <div class="homepage-games__item">
-          <img src="/images/GameHub_covers10.jpg" alt="Forge legend game cover">
-          <div class="vertical-line"></div>
-          <div class="games__item__article">
-            <h3>Forge Legend</h3>
-            <h4>Moba</h4>
-            <h5>€12.99,-</h5>
-            <a href="/games/forgelegend.html" class="cta-black cta">View</a>
-          </div>
-        </div>
-        <div class="homepage-games__item">
-          <img src="/images/GameHub_covers9.jpg" alt="Cyberpunk game cover">
-          <div class="vertical-line"></div>
-          <div class="games__item__article">
-            <h3>Cyberpunk</h3>
-            <h4>Action</h4>
-            <h5>€49.99,-</h5>
-            <a href="/games/cyberpunk.html" class="cta-black cta">View</a>
-          </div>
-        </div>
-        <div class="homepage-games__item">
-          <img src="/images/GameHub_covers5.jpg" alt="Assassin game cover">
-          <div class="vertical-line"></div>
-          <div class="games__item__article">
-            <h3>Assassin</h3>
-            <h4>Action</h4>
-            <h5>€39.99,-</h5>
-            <a href="/games/assassin.html" class="cta-black cta">View</a>
-          </div>
-        </div>
-        <div class="homepage-games__item">
-          <img src="/images/GameHub_covers4.jpg" alt="Furious game cover">
-          <div class="vertical-line"></div>
-          <div class="games__item__article">
-            <h3>Furious</h3>
-            <h4>Action</h4>
-            <h5>€29.99,-</h5>
-            <a href="/games/furious.html" class="cta-black cta">View</a>
-          </div>
+        <div class="homepage-games__container">
+          <div class="loading"></div>
+          <div class="error"></div>
         </div>
         <a href="games-page.html" class="cta-purple cta">View All Games</a>
       </section>
@@ -115,5 +81,6 @@
       <p>&copy; 2023 GameHub</p>
       <p>Online Game Provider</p>
     </footer>
+    <script src="/js/script-index.js"></script>
   </body>
 </html>

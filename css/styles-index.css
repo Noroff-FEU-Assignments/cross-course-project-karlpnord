@@ -102,12 +102,19 @@
 }
 
 .homepage-games {
-   display: flex;
-   flex-direction: column;
-   gap: 3em;
    max-width: 20em;
    margin: 100px auto;
    text-align: center;
+}
+
+.homepage-games > * {
+   margin: 2em 0;
+}
+
+.homepage-games__container {
+   display: flex;
+   flex-wrap: wrap;
+   gap: 1em;
 }
 
 .homepage-games__item {
@@ -119,6 +126,7 @@
    border-radius: 12px;
    max-width: 90%;
    margin: 0 20px;
+   flex: 45%;
 }
 
 .homepage-games .cta-purple {

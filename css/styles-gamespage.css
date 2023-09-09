@@ -8,12 +8,7 @@ label {
    font-size: 18px;
 }
 
-form option {
-   font-family: var(--ff-mont);
-   font-size: 18px;
-}
-
-select {
+input {
    width: 150px;
    height: 30px;
 }
@@ -98,7 +93,7 @@ form label {
 @media (min-width: 1000px) {
    .games {
       grid-template-columns: 1fr 1fr;
-      grid-template-rows: repeat(5, 1fr);
+      grid-template-rows: repeat(5, auto);
       max-width: 60em;
       grid-row-gap: 4em;
    }

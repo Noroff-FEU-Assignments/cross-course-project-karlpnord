@@ -7,6 +7,7 @@
     <title>GameHub | Games</title>
     <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/styles-gamespage.css" rel="stylesheet">
+    <link href="/css/loading-animation.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
   </head>
   <body>
@@ -38,122 +39,19 @@
             <img src="/images/gamehublogo.png" alt="Gamehub logo">
          </figure>
          <form class="form-item items">
-            <label for="sorting">Sort by</label>
-            <select name="sorting" id="sorting">
-               <option value="" hidden>Sort by</option>
-               <option value="low-high">Price low-high</option>
-               <option value="high-low">Price high-low</option>
-               <option value="alphabetical">Alphabetical</option>
-            </select>
+            <label for="search">Search for game:</label>
+            <input type="text" id="search" name="search">
          </form>
       </div>
       <div class="horizontal-line"></div>
-      <div class="games">
-         <div class="games-item">
-            <img src="/images/GameHub_covers10.jpg" alt="Forge legend game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Forge Legend</h2>
-               <h3>MOBA</h3>
-               <h4>€12.99,-</h4>
-               <a href="/games/forgelegend.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers.jpg" alt="Ping pong game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Ping Pong</h2>
-               <h3>Sports</h3>
-               <h4>€4.99,-</h4>
-               <a href="games/pingpong.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers6.jpg" alt="Space war game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">   
-               <h2>Space War</h2>
-               <h3>Action</h3>
-               <h4>€24.99,-</h4>
-               <a href="/games/spacewar.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers4.jpg" alt="Furios game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Furious</h2>
-               <h3>Action</h3>
-               <h4>€29.99,-</h4>
-               <a href="/games/furious.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers3.jpg" alt="Black game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">  
-               <h2>Black</h2>
-               <h3>Horror</h3>
-               <h4>€12.99,-</h4>
-               <a href="/games/black.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers5.jpg" alt="Assassin game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Assassin</h2>
-               <h3>Action</h3>
-               <h4>€39.99,-</h4>
-               <a href="/games/assassin.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers9.jpg" alt="Cyberpunk game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Cyberpunk</h2>
-               <h3>Action</h3>
-               <h4>€49.99,-</h4>
-               <a href="/games/cyberpunk.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers8.jpg" alt="Boxer game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Boxer</h2>
-               <h3>Sports</h3>
-               <h4>€9.99,-</h4>
-               <a href="/games/boxer.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers7.jpg" alt="Racing game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Racing</h2>
-               <h3>Sports</h3>
-               <h4>€3.99,-</h4>
-               <a href="/games/racing.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-         <div class="games-item">
-            <img src="/images/GameHub_covers2.jpg" alt="Super duper game cover" class="gameimage">
-            <div class="vertical-line"></div>
-            <section class="gameinfo">
-               <h2>Super Duper</h2>
-               <h3>Action</h3>
-               <h4>€4.99,-</h4>
-               <a href="/games/superduper.html" class="cta-black cta">View</a>
-            </section>
-         </div>
-      </div>
+      <div class="loading"></div>
+      <div class="error"></div>
     </main>
     <footer>
       <p>&copy; 2023 GameHub</p>
       <p>Online Game Provider</p>
     </footer>
+    
+    <script src="./js/games.js" type="module"></script>
   </body>
 </html>
