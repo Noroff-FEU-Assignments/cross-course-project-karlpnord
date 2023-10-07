@@ -71,6 +71,15 @@ main {
 /* CTA additional styling */
 .cta-purple {
    margin-top: 25px;
+   border: none;
+}
+
+.cta-disabled {
+   background: #c4c4c4;
+}
+
+.cta-enabled {
+   background: var(--clr-primary);
 }
 
 /* Responsive styling */

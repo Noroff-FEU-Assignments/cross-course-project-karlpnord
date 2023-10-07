@@ -119,12 +119,10 @@ nav li a:hover {
    font-size: 0.8em;
 }
 
-.cta-purple:hover {
-   background: var(--clr-secondary);
-}
-
+.cta-purple:hover,
 .cta-black:hover {
    background: var(--clr-secondary);
+   cursor: pointer;
 }
 
 .secondary-nav a {
@@ -164,6 +162,17 @@ nav li a:hover {
 
 .shopping-cart i:hover {
    color: #000;
+}
+
+.shopping-cart {
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 0.5em;
+}
+
+.shopping-cart-amount {
+   font-size: 1.5em;
 }
 
 .active-page {

@@ -8,6 +8,17 @@
     <link href="/css/styles.css" rel="stylesheet">
     <link href="/css/styles-contact.css" rel="stylesheet">
     <script src="https://kit.fontawesome.com/801ba823f5.js" crossorigin="anonymous"></script>
+    <!-- Hotjar Tracking Code for https://scintillating-sherbet-73ebbf.netlify.app/ -->
+    <script>
+      (function(h,o,t,j,a,r){
+          h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
+          h._hjSettings={hjid:3663714,hjsv:6};
+          a=o.getElementsByTagName('head')[0];
+          r=o.createElement('script');r.async=1;
+          r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
+          a.appendChild(r);
+      })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
+    </script>
   </head>
   <body>
     <header>
@@ -24,6 +35,7 @@
       </nav>
       <div class="shopping-cart">
         <a href="cart-summary.html" aria-label="cart link"><i class="fa-solid fa-bag-shopping"></i></a>
+        <div class="shopping-cart-amount"></div>
       </div>
     </header>
     <main>
@@ -48,13 +60,13 @@
         </section>
         <section class="message-details container__item">
           <h2>Your Message</h2>
-          <form>
+          <form class="form-mdetails">
             <label for="message">Message</label>
-            <textarea id="message" name="message" placeholder="Tell us about your issue or ask us a question!"></textarea>
+            <textarea id="message" name="message" placeholder="Tell us about your issue or ask us a question! 10 characters minimum!"></textarea>
           </form>
           <p>Or send us an email at: <span class="line-break">gamehub@gmail.com</span></p>
           <p>Or call us at: <span class="line-break">+47 999 99 999</span></p>
-          <a href="contact-success.html" class="cta-purple cta">Submit Form</a>
+          <button class="cta-purple cta cta-disabled" disabled>Submit Form</button>
         </section>
       </div>
     </main>
@@ -62,5 +74,6 @@
       <p>&copy; 2023 GameHub</p>
       <p>Online Game Provider</p>
     </footer>
+    <script src="/js/contact-script.js" type="module"></script>
   </body>
 </html>

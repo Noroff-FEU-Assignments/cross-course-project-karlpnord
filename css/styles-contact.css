@@ -74,6 +74,19 @@ main {
    font-size: 0.9em;
 }
 
+/* Other styling */
+button {
+   border: none;
+}
+
+.cta-disabled {
+   background: #c4c4c4;
+}
+
+.cta-enabled {
+   background: var(--clr-primary);
+}
+
 /* Responsive styling */
 @media (min-width: 800px) {
    .grid-container {

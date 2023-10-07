@@ -6,17 +6,17 @@
    margin: 0 20px;
    line-height: 1.5;
    font-size: 1.5em;
+   text-transform: uppercase;
 }
 
 .homepage-contact h2 {
-   font-size: 1.75em;
+   font-size: 1.25em;
    line-height: 1.4;
 }
 
 .main-home h1,
 .homepage-contact h2 {
    font-family: var(--ff-right);
-   text-transform: uppercase;
    letter-spacing: 1px;
 }
 
@@ -151,19 +151,47 @@
 }
 
 .homepage-contact {
-   min-height: 50vh;
    justify-content: center;
    align-items: center;
    text-align: center;
    margin: 0px auto;
    padding-inline: 30px;
-   gap: 0.3em;
+   gap: 2em;
    max-width: 20em;
 }
 
 .homepage-contact .cta-black {
    padding: 12.5px 35px;
    font-size: 1em;
+}
+
+.homepage-contact input {
+   width: 65%;
+   border-radius: 0.5em 0 0 0.5em;
+}
+
+.homepage-contact .cta-register {
+   border: none;
+   background: #000;
+   color: #fff;
+   padding: 0.6em 0;
+   width: 35%;
+   display: inline;
+   border-radius: 0 0.5em 0.5em 0;
+}
+
+.homepage-contact .cta-register:hover {
+   background: var(--clr-secondary);
+   cursor: pointer;
+}
+
+.homepage-contact__register {
+   display: flex;
+   margin: 0 auto;
+}
+
+.homepage-contact__item {
+   align-items: center;
 }
 
 .homepage-reviews {
@@ -203,6 +231,11 @@
    padding-top: 25px;
 }
 
+.email-error {
+   display: none;
+   color: red;
+}
+
 @media (min-width: 390px) {
    .homepage-reviews,
    .homepage-contact,
@@ -240,10 +273,13 @@
       font-size: 2.5em;
    }
 
+   .homepage-contact h2 {
+      font-size: 1.75em;
+   }
+
    .homepage-reviews__item {
       flex: 1;
    }
-
 
    .homepage-reviews,
    .homepage-about {
@@ -256,12 +292,11 @@
 
    .homepage-contact,
    .homepage-about {
-      margin: 200px auto;
+      margin: 140px auto;
    }
 
    .homepage-contact {
       max-width: 40em;
-      min-height: 30vh;
    }
 
    .homepage-games {
@@ -286,5 +321,21 @@
 
    .games__item__article {
       text-align: left;
+   }
+
+   .homepage-contact__item {
+      justify-content: center;
+   }
+
+   .homepage-contact__register {
+      width: 80%;
+   }
+
+   .homepage-contact input {
+      height: 40px;
+   }
+
+   .homepage-contact .cta-register {
+      font-size: 1em;
    }
 }
