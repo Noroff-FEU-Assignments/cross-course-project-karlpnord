@@ -148,17 +148,13 @@ main {
    background: #efefef;
    border-radius: 1rem;
    width: 100%;
-   padding: 1em 0;
+   padding: 1em 0.5em;
 }
 
-.overlay__item h3 {
-   font-family: var(--ff-toko);
-   font-size: 2em;
-}
-
+.overlay__item h3,
 .overlay__item h4 {
    font-family: var(--ff-toko);
-   font-size: 1.75em;
+   font-size: 1.5em;
 }
 
 .opacity-class {
@@ -223,10 +219,19 @@ main {
 
    .overlay__item {
       gap: 5em;
+      padding: 1em 1em;
    }
 
    .overlay__item h3 {
       font-size: 2.25em;
+   }
+   
+   .overlay__item h4 {
+      font-size: 2em;
+   }
+
+   .overlay__item img {
+      max-width: 80px;
    }
 
    .added-to-cart-overlay h2 {
