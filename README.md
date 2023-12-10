@@ -2,21 +2,18 @@
 
 ![image](https://i.postimg.cc/sfTkWKxw/gamehub.jpg)
 
-A simple overview of the use/purpose of the project.
+A cross course project of GameHub, a video game marketplace. Project consists of most of the various topics that I have learned throughout my studies at Noroff.
 
 ## Description
 
 Add a more detailed description of what your project entails and set out to do.
+GameHub is a gaming marketplace where gamers can buy and sell their video games for competitive prices. Some of the key features on the website are:
 
-You can add some bullet points if you'd like to:
-
-- List item 1
-- List item 2
-- List item 3
+- Page with all the games on sale. Can also search for various game in the search input
+- Functional shopping cart and checkout
+- Contact page to ask questions or if there are any problems with game key(s) etc.
 
 ## Built With
-
-You can list a the tech stack that you've used over here
 
 - HTML
 - CSS
@@ -26,10 +23,8 @@ You can list a the tech stack that you've used over here
 
 ### Installing
 
-This is where you list how to get the project started. It typically just includes telling a person to clone the repo and then to install the dependencies e.g.
-
 1. Clone the repo:
 
 ```bash
-git clone git@github.com:NoroffFEU/portfolio-1-example.git
+git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-karlpnord.git
 ```
