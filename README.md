@@ -6,7 +6,6 @@ A cross course project of GameHub, a video game marketplace. Project consists of
 
 ## Description
 
-Add a more detailed description of what your project entails and set out to do.
 GameHub is a gaming marketplace where gamers can buy and sell their video games for competitive prices. Some of the key features on the website are:
 
 - Page with all the games on sale. Can also search for various game in the search input
