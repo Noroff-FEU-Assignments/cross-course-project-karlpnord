@@ -27,3 +27,6 @@ GameHub is a gaming marketplace where gamers can buy and sell their video games 
 ```bash
 git clone git@github.com:Noroff-FEU-Assignments/cross-course-project-karlpnord.git
 ```
+2. Viewing the site:
+  - Live viewing with Visual Studio Code
+  - Publish to f.ex. GitHub Pages or Netlify
